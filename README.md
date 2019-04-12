@@ -4,7 +4,6 @@
 ### Prerequisites
 
 <ol>
-<li>Google Sheet</li>
 <li>Python 3.x</li>
 <li>Jupyter Notebook</li>
 <li>Pandas</li>
