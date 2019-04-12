@@ -55,6 +55,8 @@ I could compute several high level metrics using Panda's dataframe.
 ### References
 
 * [Python for data analysis](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662/ref=sr_1_3?keywords=Python+for+Data+Analysis%2C+2nd+Edition&qid=1555068716&s=gateway&sr=8-3)
+* [Ford Go Bike](https://www.fordgobike.com/)
+* [GeoPy](https://geopy.readthedocs.io/en/stable/)
 
 ## Authors
 
