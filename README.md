@@ -106,17 +106,27 @@ Other than seasonal influence on the business, I want to slice the business by g
 
 #### Usage pattern by gender 
 
+Two multi-line graphs (one for male and the other for female users) showing monthly culmulative rental volume by different age brackets in the same gender shows 25-30 and 30-35 are the heavy users of the bike rental. For female bikers these two age groups' usage is almost same while for the male group 30-35 age bracket tends to outperform 25-30 age bracket.
 
+#### Usage pattern by day of the week
 
-#### Usage pattern variation by user type (subscriber & non-subscribers)
+A bivariate plot of % of total rental count by day of week shows rental volume dropping by close to 50% 
 
-### Usage pattern by day of the week
+#### Usage pattern variation by user type 
 
-### Usage pattern by day of the hour 
+A multivariate plot using user type forms another dimension, exhibits that rental use by non-subscribers is always lesser than subscribers for all days of the week except on weekend. This points solidifies my original observation that the two user types have different purpose of usage. 
 
-### Combining them together
+#### Usage pattern by day of the hour
 
-### Effect of winter months on rental volume
+Similar multi-line graph which shows % of hourly rental with two lines (one for subscriber and one for customer) highlights that subscriber's usage has a typical bimodal pattern with sharp peaks during office commuting hours while customer's usage pattern is more flat rising curve going up till midddy and then going down.
+
+#### Combining them together
+
+The culmination of the analysis process is a group of heat maps combining median bike rental volume by day of week and day of the hour in two dimensions and using user type & gender and facet components. The group fo 4 heat maps shows that subscribers use the bike rental business between 7-10 AM in the morning and then again 4-7PM in the evening. For customers the heaver usage happens over the weekend. They tend to be leisure users.
+
+#### Effect of winter months on rental volume
+
+I have imported daily precipation data for San Franciso city and merged it with bike rental usage. San Francisco remains dry year round except during winter. As I plotted precipitation in dual axes line graph, almost every peak in precipitation can be matched with corresponding drop in rental volume as people tend not to ride a bike to avoid getting wet.
 
 
 ### Prerequisites
