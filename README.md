@@ -8,7 +8,9 @@ Not all offices are located near the public transport end points. That used to d
 * Daily pass for unlimited 30 minute ride 
 * Monthly membership which includes first 45 minutes free for every ride
 
-This data set generated enough curiosity in me as I travel to San Francisco for my job and have seen people using rental bikes for traveling short distance. I wanted to get insight to such a business to understand 
+This data set generated enough curiosity in me as I travel to San Francisco for my job and have seen people using rental bikes for traveling short distance. I was eager to get insight to such a business to understand the business model as well get take a look at the fastet growing user segments.
+
+Few questions that popped up in my mind which I thought will guide me during exploratory analysis are:
 
 * Is shared mode of transportation like bike rental getting popolar in a city like San Francisco?
 * What is the rate of growth of such type of business?
@@ -24,17 +26,21 @@ As with any data analysis project my exploratory analysis started with understan
 * Inconsistent data types - for example, timestamp field appearing as string, presence of null values
 * Presence of outliers - for example, fields like `age` had values > 100 years for some of the bike users
 * Incorrect value in computed field - for example, a handle of records had incorrect value in `ride duration` field which can be computed from `trip end timestamp` and `trip start timestamp`
+* Absence of value - Fields like `birth_year` had null values for a small percent of records. They had to deleted as I was interested in break down user dimension by gender and age bracket.
 
-Once data is cleansed, I wanted to explore the dataset to get answer to some of the questions listed above.
+Other than data cleasing I added few derived fiedls to the data frame for ease of subsequent analysis.
 
 #### High level metrics
-
-I could compute several high level metrics using Panda's dataframe.
 
 * Data is for the time period June, 2017 till March, 2019.
 * 74% of the bike rental was done by men while 24% was done by women
 * On the average female bike renters are little younger than their male counterparts. Median age for female renters is 32 years while for men, it is 33 years
-* 
+* Total number of bike rentals 2.42 million
+* Total distance travelled in 2.5 million miles
+* Total duration of bike ride is 536370 hours
+* Average distance per ride is little more than 1 mile indicating trips are mostly in local area
+* Average distance traveled per hour is 4.66 miles
+
 
 ### Prerequisites
 
