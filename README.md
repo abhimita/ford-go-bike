@@ -30,17 +30,68 @@ As with any data analysis project my exploratory analysis started with understan
 
 Other than data cleasing I added few derived fiedls to the data frame for ease of subsequent analysis.
 
+### Structure of dataframe
+
+It is useful to understand the meaning of each of the fields in the dataframe schema. Description of each of the fields are picked up from __[here](https://www.fordgobike.com/system-data)__
+
+**duration_sec** - Trip Duration (seconds)<br>
+**start_time** - Start Time and Date<br>
+**end_time** - End Time and Date<br>
+**start_station_id** - Start Station ID<br>
+**start_station_name** - Start Station Name<br>
+**start_station_latitude** - Start Station Latitude<br>
+**start_station_longitude** - Start Station Longitude<br>
+**end_station_id** - End Station ID<br>
+**end_station_name** - End Station Name<br>
+**end_station_latitude** - End Station Latitude<br>
+**end_station_longitude** - End Station Longitude<br>
+**bike_id** - Bike ID<br>
+**user_type** - User Type (Allowable values atr - subscriber or customer. “Subscriber” means member. “Customer” means people who are not members but are causal users<br> 
+**member_birth_year** - Member Year of Birth<br>
+**gender** - Member Gender<br>
+**bike_share_for_all_trip** - which tracks members who are enrolled in the Bike Share for All program for low-income residents
+
 #### High level metrics
 
 * Data is for the time period June, 2017 till March, 2019.
-* 74% of the bike rental was done by men while 24% was done by women
-* On the average female bike renters are little younger than their male counterparts. Median age for female renters is 32 years while for men, it is 33 years
 * Total number of bike rentals 2.42 million
 * Total distance travelled in 2.5 million miles
 * Total duration of bike ride is 536370 hours
 * Average distance per ride is little more than 1 mile indicating trips are mostly in local area
 * Average distance traveled per hour is 4.66 miles
 
+### Segmentation of bikers
+
+Data has attributes of bikers - gender, age & user type. I would like to segment the bikers by these attributes to highlight any usage pattern differences that I discover.
+
+* 74% of the rentals belong to male bikers while 24% belong to females
+* On an average female bikers tend to be tad youndger than that of male bikers. Median age of female bikers is 32 while it is 33 for male counterparts.
+* Age analysis segmented by user type (members & non-members from now on referred as subscribers & customers respectively) brings out another noticable pattern - customers tend to be younger on the average compared to subscribers. Data shows that it holds good for female & male genders.
+
+| Member Gender | User Type     | Median Age  |
+| ------------- |:-------------:| -----------:|
+| Female        | Customer      | 30          |
+| Female        | Subscriber    | 32          |
+| Male          | Customer      | 31          |
+| Male          | Subscriber    | 33          |
+
+* Another difference that was evident from metric values (rental count, average miles traveled and average ride duration), usage pattern is quite different from subscribers vs customers. On the average customers tend to travel higher distance as well as for longer duration.
+
+| Member | User       | Median | Rental | Mean          | Median        | Mean           | Median          |
+| Gender | Type       |  Age   | Count  | Duration (min)| Duration (min)| Distance (mile)| Distance (mile) |
+| -------|:----------:| ------:|--------:---------------:---------------:----------------:-----------------:
+| Female | Customer   | 30     |   86666| 16            | 30            | 0.98           | 1.09            |
+| Male   | Customer   | 31     |  186572| 13            | 25            | 0.98           | 1.10            |
+| Female | Subscriber | 32     |  522545|  9            | 12            | 0.88           | 1.04            |
+| Male   | Subscriber | 33     | 1660569|  8            | 10            | 0.84           | 0.97            |
+
+
+
+user_type	member_gender	rental_count	mean_duration_min	median_duration_min	min_distance_mile	median_distance_mile
+0	Customer	Female	86666	16.433333	30.456360	0.986309	1.099585
+1	Customer	Male	186572	13.716667	25.234892	0.980472	1.101624
+2	Subscriber	Female	522545	9.616667	12.427745	0.883565	1.041147
+3	Subscriber	Male	1660569	8.250000	10.690110	0.847403	0.973448
 
 ### Prerequisites
 
