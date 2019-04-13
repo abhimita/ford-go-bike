@@ -77,21 +77,14 @@ Data has attributes of bikers - gender, age & user type. I would like to segment
 
 * Another difference that was evident from metric values (rental count, average miles traveled and average ride duration), usage pattern is quite different from subscribers vs customers. On the average customers tend to travel higher distance as well as for longer duration.
 
-| Member | User       | Median | Rental | Mean          | Median        | Mean           | Median          |
-| Gender | Type       |  Age   | Count  | Duration (min)| Duration (min)| Distance (mile)| Distance (mile) |
-| -------|:----------:| ------:|--------:---------------:---------------:----------------:-----------------:
+
+| Gender | Type       |  Age   | Count  | Mean Duration (min)| Median Duration (min)| Mean Distance (mile)| Median Distance (mile) |
+| -------| ---------- | ------ | ------ | ------------- | ------------- | -------------- |----------------|
 | Female | Customer   | 30     |   86666| 16            | 30            | 0.98           | 1.09            |
 | Male   | Customer   | 31     |  186572| 13            | 25            | 0.98           | 1.10            |
 | Female | Subscriber | 32     |  522545|  9            | 12            | 0.88           | 1.04            |
 | Male   | Subscriber | 33     | 1660569|  8            | 10            | 0.84           | 0.97            |
 
-
-
-user_type	member_gender	rental_count	mean_duration_min	median_duration_min	min_distance_mile	median_distance_mile
-0	Customer	Female	86666	16.433333	30.456360	0.986309	1.099585
-1	Customer	Male	186572	13.716667	25.234892	0.980472	1.101624
-2	Subscriber	Female	522545	9.616667	12.427745	0.883565	1.041147
-3	Subscriber	Male	1660569	8.250000	10.690110	0.847403	0.973448
 
 ### Prerequisites
 
