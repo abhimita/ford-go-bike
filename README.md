@@ -85,6 +85,39 @@ Data has attributes of bikers - gender, age & user type. I would like to segment
 | Female | Subscriber | 32     |  522545|  9            | 12            | 0.88           | 1.04            |
 | Male   | Subscriber | 33     | 1660569|  8            | 10            | 0.84           | 0.97            |
 
+### Business metrics
+
+While exploring data I notice that daily rental count time series shows wavy pattern. This is typical of seasonality of data. To measure how the bike rental business id oing last few years I came up with several business metrics. These are 
+ * Rental volume
+ * Bike ride duration
+ * distance traveled
+ 
+ To avoid seasonal data clouding my observation I decided to compute cumulative values. Since for a culmulative metric, current period's value is added to pervious period's value, so plotted against time it will eliminate the troughs and crests. All these business metrics shows healthly growth oevr time.
+ 
+### Seasonality of the business
+
+Metric values plotted against time series shows clear seasonality. I have compared month from pervious year as basis of comparison which can offset the effect of cold weather during winter season. Winter months register a growth of 50-60% while summar months have shown more than 100% of bike rental business.
+
+### Usage Pattern 
+
+Bivariate line graphs of culmulative metrics in time series shows health growth of business. Same conclusion can be reinforced by multibar plot graph which compares same months of last year. In order make this work, I had to pivot my base data and bring the related columns side-by-side.
+
+Other than seasonal influence on the business, I want to slice the business by gender group, user type. The higher level metrics have already shown that usage pattern wise customers tend ride longer in terms of time and distance compared to subscribers. My attempt is to throw in day of the week along with hour of the day to see if additional correlation shows up.
+
+#### Usage pattern by gender 
+
+
+
+#### Usage pattern variation by user type (subscriber & non-subscribers)
+
+### Usage pattern by day of the week
+
+### Usage pattern by day of the hour 
+
+### Combining them together
+
+### Effect of winter months on rental volume
+
 
 ### Prerequisites
 
