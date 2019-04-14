@@ -142,8 +142,12 @@ I have imported daily precipation data for San Franciso city and merged it with 
 
 ### Content
 
-* `Ford Go Bike Analysis.ipynb`: Jupyter notebook containing data gathering, cleanup and exploratory analysis
+* `Exploratory analysis (Ford Go Bike).ipynb`: Jupyter notebook containing data gathering, cleanup and exploratory analysis
+* `Explanatory analysis (Ford Go Bike).ipynb`: Explanatory analysis for Ford Go Bike project
+* `Explanatory analysis (Ford Go Bike).html` : HTML document of explanatory analysis
+* `Explanatory analysis (Ford Go Bike).slides.html`: Slide show of explanatory analysis
 * `data/SF_Weather.csv`: Comma delimited San Francisco daily precipitation data obtained from NOAA
+* `output_toggle.tpl` : Template file to suppress displaying code segment during slideshow
 
 ### References
 
