@@ -151,7 +151,7 @@ I have imported daily precipation data for San Franciso city and merged it with 
 
 ### Peer Review
 
-I had requested [Tony Doran](https://www.linkedin.com/in/tony-doran-11b28668/) to review the slide deck and provide with feedback. His comments are:
+I had requested [Tony Doran](https://www.linkedin.com/in/tony-doran-11b28668/) from Slack's data engineering team to review the slide deck and provide with feedback. His comments are:
 
 * Pie graph:
      * Text should be inside the slice
