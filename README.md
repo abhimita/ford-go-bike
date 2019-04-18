@@ -149,6 +149,21 @@ I have imported daily precipation data for San Franciso city and merged it with 
 * `data/SF_Weather.csv`: Comma delimited San Francisco daily precipitation data obtained from NOAA
 * `output_toggle.tpl` : Template file to suppress displaying code segment during slideshow
 
+### Peer Review
+
+I had requested [Tony Doran](https://www.linkedin.com/in/tony-doran-11b28668/) to review the slide deck and provide with feedback. His comments are:
+
+* Pie graph:
+ - the text should be inside the slice
+ - rental_count (y label) should be removed
+ - title is not really an “Analysis”
+* Box plot
+ - call it a box plot, “distribution graphs look more like the bell curves
+* Line graphs
+ - units for the y-axis don’t show 100000, show 100k instead reader can’t count the zeros
+* Really liked the rain graph and the commuter heatmap
+ - Would like a conclusion summary slides, and maybe a recommendation for some optimization. i.e. focus on getting this target group …. that sort of thing.
+
 ### References
 
 * [Python for data analysis](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662/ref=sr_1_3?keywords=Python+for+Data+Analysis%2C+2nd+Edition&qid=1555068716&s=gateway&sr=8-3)
