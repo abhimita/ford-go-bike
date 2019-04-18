@@ -154,15 +154,15 @@ I have imported daily precipation data for San Franciso city and merged it with 
 I had requested [Tony Doran](https://www.linkedin.com/in/tony-doran-11b28668/) to review the slide deck and provide with feedback. His comments are:
 
 * Pie graph:
- - the text should be inside the slice
- - rental_count (y label) should be removed
- - title is not really an “Analysis”
+     * Text should be inside the slice
+     * rental_count (y label) should be removed
+     * title is not really an “Analysis”
 * Box plot
- - call it a box plot, “distribution graphs look more like the bell curves
+     * call it a box plot, “distribution graphs look more like the bell curves
 * Line graphs
- - units for the y-axis don’t show 100000, show 100k instead reader can’t count the zeros
+     * units for the y-axis don’t show 100000, show 100k instead reader can’t count the zeros
 * Really liked the rain graph and the commuter heatmap
- - Would like a conclusion summary slides, and maybe a recommendation for some optimization. i.e. focus on getting this target group …. that sort of thing.
+     * Would like a conclusion summary slides, and maybe a recommendation for some optimization. i.e. focus on getting this target group …. that sort of thing.
 
 ### References
 
