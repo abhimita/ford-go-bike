@@ -163,6 +163,11 @@ I had requested [Tony Doran](https://www.linkedin.com/in/tony-doran-11b28668/) f
      * units for the y-axis don’t show 100000, show 100k instead reader can’t count the zeros
 * Really liked the rain graph and the commuter heatmap
      * Would like a conclusion summary slides, and maybe a recommendation for some optimization. i.e. focus on getting this target group …. that sort of thing.
+     
+### Revision based on peer review
+
+* I polished the graphs to incorporate peer review recommendations.
+* Also I added a conclusion page.
 
 ### References
 
